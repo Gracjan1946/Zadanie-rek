@@ -1,0 +1,96 @@
+.footer{
+    background-color: #111;
+    color: white;
+    padding: 5rem 0;
+
+    &_first-element{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+        @media (min-width: map_get($grid-breakpoints, lg)){
+            flex-direction: row;
+            align-items: center;
+            padding: 0;
+            text-align: left;
+        }
+    }
+
+    &_brand{
+        margin: 1rem auto;
+        filter: brightness(0) invert(1);
+        @media (min-width: map_get($grid-breakpoints, lg)){
+            margin: 0 auto 0 0;
+        }
+    }
+
+    &_text{
+    margin-bottom: 1rem;
+    @media (min-width: map_get($grid-breakpoints, lg)){
+        margin-bottom: 0;
+    }
+    }
+
+    &_hr{
+        background: #F5F0EC;
+        opacity: 1;
+        margin: 3.75rem 0;
+    }
+
+    &_second-element{
+        flex-direction: column;
+        margin-bottom: 3rem;
+        text-align: center;
+        @media (min-width: map_get($grid-breakpoints, lg)){
+            flex-direction: row;
+            margin-bottom: 7.5rem;
+            text-align: left;
+        }
+    }
+
+    &_link{
+        color: #fff;
+        text-decoration: none;
+        font-size: .9rem;
+        margin-bottom: .5rem;
+        &:hover{
+            color: $btn-color;
+        }     
+        @media (min-width: map_get($grid-breakpoints, lg)){        
+            padding-right: 3rem;
+            margin-bottom: 0;
+            &:nth-child(4){
+                margin-right: auto;
+            }
+        }
+    }
+
+     &_phone{
+         @media (min-width: map_get($grid-breakpoints, lg)){
+            margin-right: 2.5rem;
+        }
+     }
+
+
+    &_third-element{
+        flex-direction: column;
+        text-align: center;
+        @media (min-width: map_get($grid-breakpoints, lg)){
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: left;
+        }
+    }
+
+    &_madeby{
+        justify-content: center;
+    }
+
+    &_text-madeby{
+        margin-bottom: 0;
+    }
+
+    &_brand-madeby{
+        margin-left: 1rem;
+    }
+}

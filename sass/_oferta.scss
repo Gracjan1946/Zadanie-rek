@@ -1,0 +1,74 @@
+.oferta{
+    background-color: #F5F0EC;
+
+    &_text-under{
+        width: 100%;
+        @media (min-width: map_get($grid-breakpoints, lg)){
+            width: 50%;
+        }
+    }
+    &_cards{
+        padding: 6rem 5rem 10rem;
+        padding: 3rem 0 0;
+        @media (min-width: map_get($grid-breakpoints, lg)){
+            padding: 6rem 0 10rem;
+        }
+
+        @media (min-width: map_get($grid-breakpoints, xxl)){
+            padding: 6rem 4rem 10rem;
+        }
+    }
+
+    &_card{
+        padding: 4rem 2.5rem;
+        margin: 0 1rem 1.5rem;
+        border-radius: 8%;
+        transition: .2s linear;
+        &:hover{
+            transform: scale(95%);
+            cursor: pointer;
+        }
+
+        @media (min-width: map_get($grid-breakpoints, md)){
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (min-width: map_get($grid-breakpoints, lg)){
+            margin: 0 3rem;
+            padding: 2rem 1.5rem;
+            width: 33%;
+        }
+
+        @media (min-width: map_get($grid-breakpoints, xl)){
+            padding: 3rem 2.5rem;
+        }
+
+        @media (min-width: map_get($grid-breakpoints, xxl)){
+            padding: 4rem 2.5rem;
+            width: 25%;
+        }
+
+    }
+
+    &_card-title{
+        font-size: 1.7rem;
+        @media (min-width: map_get($grid-breakpoints, lg)){
+            padding: 2.5rem 0 .5rem;
+        }
+    }
+
+    &_card-text{
+        font-size: .9rem;
+        @media (min-width: map_get($grid-breakpoints, lg)){
+            margin-bottom: 4rem;
+        }
+    }
+
+    &_card-link{
+        &>i{
+            margin-left: .3rem;
+        }
+    }
+}

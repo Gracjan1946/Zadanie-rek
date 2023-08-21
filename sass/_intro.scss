@@ -1,0 +1,60 @@
+.intro{
+    color: #fff;
+    // style na pc
+
+    &_slajder{
+        position: relative;
+        width: auto;
+    }
+
+    &_slajder-container{
+        display: flex;
+    }
+
+    &_slide-container{
+        width: 100%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        transition: transform .5s linear;
+    }
+
+
+    &_text{
+        padding: 7rem 0;
+        background-color: #DCC1AB;
+    }
+
+    &_buttons{
+        margin-top: 4.2rem;
+    }
+
+    &_img-element{
+        height: 150%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+    
+    &_slajder-arrow{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        bottom: 0;
+        right: 0;
+        height: 6rem;
+        width: 10rem;
+        padding: 1rem 2rem;
+        background-color: #F5F0EC;
+        z-index: 1;
+        &>i{
+            font-size: $h1-title-size;
+            cursor: pointer;
+        }
+    }
+
+    @media (min-width: map_get($grid-breakpoints, lg)){
+        color: #000;
+    }
+}
